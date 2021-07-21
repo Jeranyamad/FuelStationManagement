@@ -1,3 +1,4 @@
+import { DefaultModule } from './layouts/default/default.module';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,7 @@ import { FuelStationsComponent } from './components/fuel-stations/fuel-stations.
 import { ViewUserManagementComponent } from './components/view-user-management/view-user-management.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './components/table/table.component';
-//import { StationManagementComponent } from './components/station-management/station-management.component';
+
 
 //import { CreateuserComponent } from './components/createuser/createuser.component';
 
@@ -28,15 +29,11 @@ import { LoginComponent } from './components/login/login.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     FuelStationsComponent,
     ViewUserManagementComponent,
-    //StationManagementComponent,
     DashboardComponent,
     TableComponent,
     LoginComponent,
@@ -55,6 +52,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
+    DefaultModule,
 
   ],
   // providers: [FuelStationsService],
