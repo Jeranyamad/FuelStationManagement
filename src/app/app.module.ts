@@ -1,3 +1,6 @@
+import { MatIconModule } from '@angular/material/icon';
+
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DefaultModule } from './layouts/default/default.module';
 
 import { NgModule } from '@angular/core';
@@ -22,11 +25,16 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatTableModule } from '@angular/material/table';
 import { LoginComponent } from './components/login/login.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
+import { NavComponent } from './components/nav/nav.component';
+
 
 
 @NgModule({
@@ -37,6 +45,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     DashboardComponent,
     TableComponent,
     LoginComponent,
+    NavComponent,
 
   ],
   imports: [
@@ -49,10 +58,15 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule,
     MatTableModule,
     MatPaginatorModule,
     DefaultModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatButtonModule,
+    LayoutModule,
+    MatIconModule,
 
   ],
   // providers: [FuelStationsService],
