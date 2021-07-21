@@ -26,3 +26,5 @@ export class TableComponent {
   dataSource = ELEMENT_DATA;
 
 }
+
+export class table {}

@@ -24,6 +24,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatTableModule } from '@angular/material/table';
+import { LoginComponent } from './components/login/login.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
@@ -37,6 +39,7 @@ import { MatTableModule } from '@angular/material/table';
     //StationManagementComponent,
     DashboardComponent,
     TableComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -51,6 +54,7 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     MatIconModule,
     MatTableModule,
+    MatPaginatorModule,
 
   ],
   // providers: [FuelStationsService],
