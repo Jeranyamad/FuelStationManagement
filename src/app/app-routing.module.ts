@@ -7,16 +7,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
-    component: DashboardComponent,
-  children: [{
     path: '',
-    component: FuelStationsComponent,
+    component: DashboardComponent,
+  children: []
   },
   {
     path: 'table', component: ViewUserManagementComponent,
-  }]
-
+  },
+  {
+    path: 'fuel',
+    component: FuelStationsComponent,
   }];
 
 @NgModule({
