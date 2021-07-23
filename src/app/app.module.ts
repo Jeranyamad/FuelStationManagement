@@ -45,7 +45,7 @@ import { AlertComponent } from './components/alert/alert.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { EmailComponent } from './email/email.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 const firebaseConfig = {

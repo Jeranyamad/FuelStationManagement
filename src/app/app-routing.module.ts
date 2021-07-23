@@ -1,4 +1,4 @@
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { EmailComponent } from './email/email.component';
 import { ViewUserManagementComponent } from './components/view-user-management/view-user-management.component';
 import { FuelStationsComponent } from './components/fuel-stations/fuel-stations.component';

@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/firestore';
 import * as firebase from 'firebase/app';
 import 'rxjs/add/operator/switchMap';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
+
 
 @Injectable()
 export class AuthService {
@@ -15,7 +16,7 @@ export class AuthService {
     private router: Router) {}
 
   login(email: string, password: string) {
-    this.afAuth.auth.signInWithEmailAndPassword(email, password)
+    this.afAuth.signInWithEmailAndPassword(email, password)
     .then((value: any) => {
       console.log('Nice, it worked!');
       this.router.navigateByUrl('/profile');
@@ -26,7 +27,7 @@ export class AuthService {
   }
 
   emailSignup(email: string, password: string) {
-    this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+    this.afAuth.createUserWithEmailAndPassword(email, password)
     .then((value: any) => {
      console.log('Sucess', value);
      this.router.navigateByUrl('/profile');
@@ -49,12 +50,12 @@ export class AuthService {
   }
 
   logout() {
-    this.afAuth.auth.signOut().then(() => {
+    this.afAuth.signOut().then(() => {
       this.router.navigate(['/']);
     });
   }
 
   private oAuthLogin(provider: any) {
-    return this.afAuth.auth.signInWithPopup(provider);
+    return this.afAuth.signInWithPopup(provider);
   }
 }
